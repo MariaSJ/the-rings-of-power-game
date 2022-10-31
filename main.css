@@ -15,10 +15,19 @@
     gap: 20px;
   }
 
+  .btn{
+    background-color: brown;
+    width: 80px;
+    height: 40px;
+    border: 1px solid brown;
+    color: white;
+    font-size: 20px;
+  }
   .text{
     color: white;
+    font-size: 22px;
     background-color: brown;
-    width: 320px;
+    width: 370px;
     height: 30px;
     text-align: center;
   }
