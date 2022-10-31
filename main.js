@@ -17,39 +17,45 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
 
-
-function avatarNumber (){
-    if (sureños === getRandomNumber(1));
-
-    if (orcos === getRandomNumber(2));
-    
+function avatarNumber(x){
+    if (x === 1){
+        return sureños;
+    }
+    if (x === 2){
+        return orcos;
+    }
+    if (x === 3){
+        return goblins;
+    }
+    if (x === 4){
+        return huargos;
+    }
+    if (x === 5){
+        return trolls;
+    }  
 };
 
 function paintText (){
     const randomNumer = getRandomNumber(5);
+    const avatarRandom = avatarNumber(randomNumer);
     const selectValue = select.value;
 
-    if (selectValue > ) {
+    if (selectValue > avatarRandom) {
         textBox.innerHTML = 'Ha ganado el Ejército del Bien! Enhorabuena';
     }
-    if (selectValue < ) {
+    if (selectValue < avatarRandom) {
         textBox.innerHTML = 'Ha ganado el Ejército del Mal! Vuelve a Intentarlo';
     }
-    if (selectValue === ) {
+    if (selectValue === avatarRandom) {
         textBox.innerHTML = 'Empate';
     }
 };
 
-
-
 function handleClick(event) {
     event.preventDefault();
     getRandomNumber();
-    avatarNumber();
     paintText();
 }
-
-
 
 //events
 
