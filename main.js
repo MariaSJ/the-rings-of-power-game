@@ -41,10 +41,10 @@ function paintText (){
     const selectValue = select.value;
 
     if (selectValue > avatarRandom) {
-        textBox.innerHTML = 'Ha ganado el Ejército del Bien! Enhorabuena';
+        textBox.innerHTML = '¡Ha ganado el Ejército del Bien! Enhorabuena';
     }
     if (selectValue < avatarRandom) {
-        textBox.innerHTML = 'Ha ganado el Ejército del Mal! Vuelve a Intentarlo';
+        textBox.innerHTML = '¡Ha ganado el Ejército del Mal! Vuelve a Intentarlo';
     }
     if (selectValue === avatarRandom) {
         textBox.innerHTML = 'Empate';
@@ -55,7 +55,7 @@ function handleClick(event) {
     event.preventDefault();
     getRandomNumber();
     paintText();
-}
+};
 
 //events
 

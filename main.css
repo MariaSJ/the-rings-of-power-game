@@ -12,22 +12,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     gap: 20px;
   }
 
+  .Subtitle{
+    text-transform: uppercase;
+  }
+  .title{
+    text-transform: uppercase;
+  }
+  .select{
+    width: 400px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
   .btn{
-    background-color: brown;
+    background-color: gold;
     width: 80px;
     height: 40px;
-    border: 1px solid brown;
-    color: white;
+    border: 1px solid yellow;
+    color: rgb(53, 13, 13);
     font-size: 20px;
+    border-radius: 5px;
   }
   .text{
-    color: white;
+    color: rgb(53, 13, 13);
     font-size: 22px;
-    background-color: brown;
-    width: 370px;
-    height: 30px;
+    background-color: burlywood;
+    width: 500px;
+    height: 40px;
     text-align: center;
+    border-radius: 5px;
   }
