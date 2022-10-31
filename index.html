@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <title>Los Anillos del Poder</title>
 </head>
 <body>
+    <main class="main">
+        <h2>Juego</h2>
+        <h1>Los anillos del poder</h1>
+        <p>¡La Tierra Media está en guerra! En ella lucharán razas leales a Sauron contra otras bondadosas que no
+        quieren que el mal reine sobre sus tierras.</p>
     
+        <p></p>
+        <form>
+            <select class="select js_select">
+                <option hidden-selected>Seleccione la raza con la que vas a jugar</option>
+                <option value="1">Pelosos</option>
+                <option value="2">Sureños buenos</option>
+                <option value="3">Enanos</option>
+                <option value="4">Númenóreanos</option>
+                <option value="5">Elfos</option>
+            </select>
+            <input class="btn js_btn" type="button" value="Batalla">
+        </form>
+        <span class="text js_text">¡Comienza la batalla!</span>
+
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
