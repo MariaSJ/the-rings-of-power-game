@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Los Anillos del Poder</title>
 </head>
 <body>
@@ -24,11 +24,24 @@
                 <option value="4">Númenóreanos</option>
                 <option value="5">Elfos</option>
             </select>
-            <input class="btn js_btn" type="button" value="Batalla">
+            <input class="buttons js_btn" type="button" value="Batalla">
+            <input class="buttons btn_reset js_btn_reset hidden" type="button" value="Reiniciar Juego">
+
         </form>
-        <span class="text js_text">¡Comienza la batalla!</span>
+        <section>
+            <p class="text js_text">¡Comienza la batalla!</p>
+
+            <p class="points">Puntuaciones</p>
+            <div class="results">
+                <p class="js-counter-user counter">Jugador/a: 0</p>
+                <p class="js-counter-pc counter">Computadora: 0</p>
+            </div>
+
+        <!-- Game over reload game -->
+        </section>
+
 
     </main>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

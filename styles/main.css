@@ -7,7 +7,7 @@
 
 
   .main{
-    background-image: url(./img/battle.jpg);
+    background-image: url(/img/battle.jpg);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,13 +30,14 @@
     margin-right: 20px;
   }
 
-  .btn{
+  .buttons{
     background-color: gold;
-    width: 80px;
+    width: 100px;
     height: 40px;
     border: 1px solid yellow;
     color: rgb(53, 13, 13);
-    font-size: 20px;
+    font-size: 15px;
+
     border-radius: 5px;
   }
   .text{
@@ -47,4 +48,8 @@
     height: 40px;
     text-align: center;
     border-radius: 5px;
+  }
+
+  .hidden{
+    display: none;
   }
