@@ -5,12 +5,6 @@ const select = document.querySelector('.js_select');
 const btn = document.querySelector('.js_btn');
 const textBox = document.querySelector('.js_text');
 
-const sureños = 2;
-const orcos = 2;
-const goblins = 2;
-const huargos = 3;
-const trolls = 5;
-
 //variables bonus
 
 let userPoints = 0
@@ -23,7 +17,13 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
 
-function avatarNumber(x){
+function avatarNumber(x) {
+    const sureños = 2;
+    const orcos = 2;
+    const goblins = 2;
+    const huargos = 3;
+    const trolls = 5;
+
     if (x === 1){
         return sureños;
     }
@@ -50,7 +50,7 @@ function paintText (){
         textBox.innerHTML = '¡Ha ganado el Ejército del Bien! Enhorabuena';
     }
     else if (selectValue < avatarRandom) {
-        textBox.innerHTML = '¡Ha ganado el Ejército del Mal! Vuelve a Intentarlo';
+        textBox.innerHTML = '¡Ha ganado el Ejército del Mal! Vuelve a intentarlo';
     }
     else if (selectValue === avatarRandom) {
         textBox.innerHTML = 'Empate';
@@ -65,8 +65,8 @@ function handleClick(event) {
 
 //BONUS:
 /*
--calcular los puntos del usu0ario y de ordenador (contador usuario y contador ordenador)
--contar las partidas (10 movimientos) contador de movimientos
+- calcular los puntos del usu0ario y de ordenador (contador usuario y contador ordenador)
+- contar las partidas (10 movimientos) contador de movimientos
 - cuando llegue a 10 se esconda el boton batalla y aparezca botón reinciar juego: classList
 - poner todos los contenedores a 0
 - Mostrar quién ha ganado
