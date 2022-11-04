@@ -96,7 +96,6 @@ function handleClick(event) {
     event.preventDefault();
     paintText();
     renderScore();
-    moves++;
     gameOver();
 };
 
