@@ -3,14 +3,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Josefin Sans', sans-serif;
   }
 
-
+  :root{
+    --font-family-1: 'Josefin Sans', sans-serif;
+    --font-family-2: 'Libre Baskerville', serif;
+    --color-purple: #8C355E;
+    --color-dark-blue: #0B0726;
+    --color-navy-blue: #1A2873;
+    --color-light-cream: #F2E6D0;
+    --color-light-orange: #F2AD94;
+    --color-terracota: #BF584E; 
+  }
 
   .main{
     background-image: url(/img/battle.jpg);
-    
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -22,45 +29,74 @@
     align-content: center;
     gap: 20px;
   }
+  .main::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.50);
+  }
 
   .subtitle{
+    position: relative;
     text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font-family-2);
+    color: lightgray;
   }
 
   .parragraf{
+    position: relative;
     text-align: center;
     color: whitesmoke;
     font-size: smaller;
+    font-size: 13px;
     width: 250px;
   }
   .img-title{
-      width: 220px;
-      height: auto;
+    position: relative;
+    width: 290px;
+    height: auto;
   }
 
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .select{
-    width: 170px;
+    position: relative;
+    width: 250px;
     height: 25px;
-    margin-right: 15px;
-    font-size: 10px;
+    margin-bottom: 15px;
+    font-size: 11.5px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Josefin Sans';
+    background-color: var(--color-light-cream);
   }
 
   .buttons{
-    background-color: gold;
+    position: relative;
+    background-color: var(--color-terracota);
     width: 80px;
     height: 30px;
-    border: 1px solid yellow;
-    color: rgb(53, 13, 13);
+    border: 1px solid var(--color-purple);
+    color: var(--color-light-cream);
     font-size: 15px;
-
     border-radius: 5px;
+    font-family: 'Libre Baskerville';
   }
   .text{
+    position: relative;
     color: rgb(53, 13, 13);
     font-size: 22px;
-    background-color: burlywood;
-    width: 100px;
-    height: 40px;
+    background-color: lightblue;
+    width: 270px;
+    height: 30px;
     text-align: center;
     border-radius: 5px;
   }
