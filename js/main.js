@@ -107,7 +107,7 @@ function handleReset(event) {
     pcPoints = 0;
     moves = 0;
     textBox.innerHTML = "¡Comienza la batalla!";
-    select.value = select;
+    window.location.reload();
     renderScore();
 }
 
