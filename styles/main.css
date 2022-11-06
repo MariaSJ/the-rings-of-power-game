@@ -48,11 +48,12 @@
   }
 
   .parragraf{
+    font-family: var(--font-family-2);
     position: relative;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     font-size: smaller;
-    font-size: 13px;
+    font-size: 11px;
     width: 250px;
   }
   .img-title{
@@ -75,14 +76,14 @@
     font-size: 11.5px;
     text-align: center;
     border-radius: 5px;
-    font-family: 'Josefin Sans';
+    font-family: var(--font-family-1);
     background-color: var(--color-light-cream);
   }
 
   .buttons{
     position: relative;
     background-color: var(--color-terracota);
-    width: 80px;
+    width: 130px;
     height: 30px;
     border: 1px solid var(--color-purple);
     color: var(--color-light-cream);
@@ -92,15 +93,41 @@
   }
   .text{
     position: relative;
-    color: rgb(53, 13, 13);
-    font-size: 22px;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark-blue);
+    font-size: 15px;
+    font-family: var(--font-family-2);
+    background-color: var(--color-light-orange);
     width: 270px;
-    height: 30px;
+    height: 45px;
     text-align: center;
     border-radius: 5px;
   }
 
+  .sections-points{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-cream);
+    font-size: var(--font-family-2);
+  }
+  .points{
+    text-transform:uppercase;
+  }
+
+  .results{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hidden{
     display: none;
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-orange);
   }
