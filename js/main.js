@@ -16,6 +16,10 @@ let moves = 0;
 
 //functions
 
+function paintHTML (elementHtml, writeText) {
+    elementHtml.innerHTML = writeText;
+}
+
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
@@ -50,15 +54,15 @@ function paintText (){
     const selectValue = parseInt(select.value);
 
     if (selectValue > avatarRandom) {
-        textBox.innerHTML = '¡Ha ganado el Ejército del Bien! Enhorabuena';
+        paintHTML(textBox, '¡Ha ganado el Ejército del Bien! Enhorabuena');
         userPoints++;
     }
     else if (selectValue < avatarRandom) {
-        textBox.innerHTML = '¡Ha ganado el Ejército del Mal! Vuelve a intentarlo';
+        paintHTML(textBox, '¡Ha ganado el Ejército del Mal! Vuelve a intentarlo');
         pcPoints++;
     }
     else if (selectValue === avatarRandom) {
-        textBox.innerHTML = 'Empate';
+        paintHTML(textBox,'Empate');
     }
 }
 
@@ -83,11 +87,11 @@ function gameOver() {
         btn.classList.add("hidden");
         btnReset.classList.remove("hidden");
         if (userPoints > pcPoints) {
-            textBox.innerHTML = "¡Has ganado!";
+            paintHTML(textBox, '¡Has ganado!');
         } else if(userPoints < pcPoints)  {
-            textBox.innerHTML = "Has perdido :(";
+            paintHTML(textBox, 'Has perdido :(');
         } else {
-            textBox.innerHTML = "¡Empate!";
+            paintHTML(textBox, '¡Empate!');
         }
     }
 }
