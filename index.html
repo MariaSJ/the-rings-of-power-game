@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Los Anillos del Poder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" type="image/jpg" href="./img/Unico_Anello.ico"/>
+    <title>Juego Los Anillos del Poder</title>
 </head>
 <body>
     <main class="main">
         <h2 class="subtitle">Juego</h2>
-        <h1 class="title">Los anillos del poder</h1>
-        <p class="p1">¡La Tierra Media está en guerra! En ella lucharán razas leales a Sauron contra otras bondadosas que no
+        <img class="img-title" src="./img/los-anillos-del-poder.png" alt="">
+        <p class="parragraf">¡La Tierra Media está en guerra! En ella lucharán razas leales a Sauron contra otras bondadosas que no
         quieren que el mal reine sobre sus tierras.</p>
-    
-        <p class="p2">Eres un/a jugador/a del ejercito del bien. No olvides tu misión de ganar la batalla</p>
-        <form>
-            <select class="select js_select">
-                <option hidden-selected>Selecciona la raza con la que vas a jugar</option>
+        <p class="parragraf">Eres un/a jugador/a del ejercito del bien. No olvides tu misión de ganar la batalla.</p>
+        <form class="form">
+            <select class="select js_select" required>
+                <option selected="selected" hidden="selected">Selecciona la raza con la que vas a jugar</option>
                 <option value="1">Pelosos</option>
                 <option value="2">Sureños buenos</option>
                 <option value="3">Enanos</option>
                 <option value="4">Númenóreanos</option>
                 <option value="5">Elfos</option>
             </select>
-            <input class="btn js_btn" type="button" value="Batalla">
+            <button class="buttons js_btn">Batalla</button>
+            <button class="buttons btn_reset js_btn_reset hidden">Reiniciar Juego</button>
         </form>
-        <span class="text js_text">¡Comienza la batalla!</span>
-
+        <div class="text">
+            <p class="text js_text">¡Comienza la batalla!</p>
+        </div>
+        
+        <section class="sections-points">
+            <p class="points">Puntuaciones</p>
+            <div class="results">
+                <p class="counter js-counter-user counter">Jugador/a: 0</p>
+                <p class="counter js-counter-pc counter">Computadora: 0</p>
+            </div>
+        <!-- Game over reload game -->
+        </section>
     </main>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
