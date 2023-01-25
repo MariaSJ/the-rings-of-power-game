@@ -4,4 +4,4 @@ Here you can find a very simple game inspire in The Rings of Power series.
 ## Used technologies:
 This is muy first exercise using JavaScript. It´'s layout and dynamised through **HTML**, **CSS** and **JavaScript** vanilla.
 ## Let's go!
-http://beta.adalab.es/modulo-2-evaluacion-intermedia-MariaSJ/
+https://mariasj.github.io/the-rings-of-power-game/
